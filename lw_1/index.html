@@ -1,12 +1,220 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Лабораторна робота №1</title>
+    <meta charset="utf-8">
 </head>
+
 <body>
+
     <header>
-        <h1>Перша сторінка</h1>
+        <h1>Головний заголовок сторінки</h1>
     </header>
-    Зміст сторінки.
+
+    <main>
+        <h3>Відформатований текст</h3>
+        <p>Загальна кількість перестановок з <i>n</i> елементів дорівнює <b>добутку всіх цілих чисел</b>
+            від <i>1</i> до <i>n</i>:<br>
+            P<sub>n</sub> = 1&bull;2&bull;3&bull;&hellip;&bull;(n-2)&bull;(n-1)&bull;n.
+        </p>
+
+        <h3>Список визначень</h3>
+        <dl>
+            <dt><b>Веб-розробка</b></dt>
+            <dd>Вивчення принципів створення веб-сайтів і веб-додатків,<br>
+                розробка Frontend & Backend, а саме:<br>
+                розмітку сторінок (HTML), каскадні таблиці стилів (CSS),<br>
+                логіку додатку або сторінки (JavaScript) і серверну частину (PHP).
+            </dd>
+            <dt><b>Комп'ютерна схемотехніка</b></dt>
+            <dd>Охоплення будови та функціонування електронних схем і компонентів комп’ютерних систем,<br>
+                отримання знань з проєктування апаратної частини та принципів роботи електроніки.
+            </dd>
+            <dt><b>Архітектура комп'ютерів</b></dt>
+            <dd>Дослідження структурної організації комп’ютерів:<br>
+                процесори, шини, пам’ять, периферію, а також принципи взаємодії компонентів системи.
+            </dd>
+            <dt><b>Системне програмне забезпечення</b></dt>
+            <dd>Фокус на програмному забезпеченні, яке лежить під прикладними програмами:<br>
+                операційні системи, драйвери, служби, утиліти, а також засоби розробки і супроводу.
+            </dd>
+            <dt><b>Крос-платформне програмування</b></dt>
+            <dd>Отримання навичок створення програм, які можуть працювати на різних ОС<br>
+                із застосуванням фреймворку Qt, що забезпечує всіма необхідними інструментами розробки.
+            </dd>
+            <dt><b>Моделювання систем</b></dt>
+            <dd>Отримання знань і практичних навичок з побудови математичних чи імітаційних моделей<br>
+                складних систем, оцінювання їх роботи та застосування для аналізу й прогнозування.
+            </dd>
+            <dt><b>Тестування програмного забезпечення</b></dt>
+            <dd>Дисципліна, що навчає методам ідентифікації, перевірки і забезпечення якості програмних продуктів:<br>
+                тестування функціональності, надійності, безпеки тощо.
+            </dd>
+            <dt><b>Психологія управління</b></dt>
+            <dd>Вивчення психологічих аспектів управлінської діяльності:<br>
+                мотивацію, лідерство, комунікацію в команді, вплив і прийняття рішень в організаціях.
+            </dd>
+            <dt><b>Soft Skills</b></dt>
+            <dd>Курс, спрямований на розвиток «soft skills» (комунікація, робота в команді, адаптивність, критичне
+                мислення),<br>
+                які важливі незалежно від конкретної професії.
+            </dd>
+            <dt><b>Соціальна психологія і конфліктологія</b></dt>
+            <dd>Дисципліна, яка досліджує соціально-психологічні явища, міжособистісні й міжгрупові взаємодії,<br>
+                природу і структуру конфліктів та методи їх вирішення, а також роль індивіда в соціумі.
+            </dd>
+            <dt><b>Фізичне виховання</b></dt>
+            <dd>Курс, що спрямований на розвиток фізичної культури, формування здорового способу життя,<br>
+                зміцнення фізичних якостей і умінь до фізичної активності.
+            </dd>
+        </dl>
+
+        <table border="1">
+            <caption><b>Фрагмент таблиці періодичної системи хімічних елементів</b></caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Періоди</th>
+                    <th colspan="10">Групи</th>
+                </tr>
+                <tr>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                    <th colspan="3">VIII</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I</td>
+                    <td>H<small><sup>1</sup><sub>1,008</sub><br>Гідроген</small></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>He<small><sup>2</sup><sub>4,003</sub><br>Гелій</small></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td>Li<small><sup>3</sup><sub>6,939</sub><br>Літій</small></td>
+                    <td>Be<small><sup>4</sup><sub>9,012</sub><br>Бериллій</small></td>
+                    <td>B<small><sup>5</sup><sub>10,811</sub><br>Бор</small></td>
+                    <td>C<small><sup>6</sup><sub>12,011</sub><br>Карбон</small></td>
+                    <td>N<small><sup>7</sup><sub>14,007</sub><br>Нітроген</small></td>
+                    <td>O<small><sup>8</sup><sub>15,999</sub><br>Оксиген</small></td>
+                    <td>F<small><sup>9</sup><sub>18,999</sub><br>Флуор</small></td>
+                    <td>Ne<small><sup>10</sup><sub>20,179</sub><br>Неон</small></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td>Na<small><sup>11</sup><sub>22,989</sub><br>Натрій</small></td>
+                    <td>Mg<small><sup>12</sup><sub>24,305</sub><br>Магній</small></td>
+                    <td>Al<small><sup>13</sup><sub>26,982</sub><br>Алюміній</small></td>
+                    <td>Si<small><sup>14</sup><sub>28,086</sub><br>Силіцій</small></td>
+                    <td>P<small><sup>15</sup><sub>30,974</sub><br>Фосфор</small></td>
+                    <td>S<small><sup>16</sup><sub>32,064</sub><br>Сульфур</small></td>
+                    <td>Cl<small><sup>17</sup><sub>35,453</sub><br>Хлор</small></td>
+                    <td>Ar<small><sup>18</sup><sub>39,948</sub><br>Аргон</small></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>IV</td>
+                    <td>K<small><sup>19</sup><sub>39,102</sub><br>Калій</small></td>
+                    <td>Ca<small><sup>20</sup><sub>40,080</sub><br>Кальцій</small></td>
+                    <td>Sc<small><sup>21</sup><sub>44,956</sub><br>Скандій</small></td>
+                    <td>Ti<small><sup>22</sup><sub>47,900</sub><br>Титан</small></td>
+                    <td>V<small><sup>23</sup><sub>50,942</sub><br>Ванадій</small></td>
+                    <td>Cr<small><sup>24</sup><sub>51,996</sub><br>Хром</small></td>
+                    <td>Mn<small><sup>25</sup><sub>54,938</sub><br>Марганець</small></td>
+                    <td>Fe<small><sup>26</sup><sub>55,847</sub><br>Ферум</small></td>
+                    <td>Co<small><sup>27</sup><sub>58,933</sub><br>Кобальт</small></td>
+                    <td>Ni<small><sup>28</sup><sub>58,710</sub><br>Нікель</small></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+        <h3>Форма вибору комплектуючих ПК</h3>
+        <form>
+            <label for="proc_manuf">Виробник процесорів:</lable>
+                <select id="proc_manuf" name="proc_manuf">
+                    <option>Intel</option>
+                    <option>AMD</option>
+                </select>
+
+                <br><br>
+                <label for="proc_model">Модель процесора:</label>
+                <br>
+                <input id="proc_model" name="proc_model" type="text">
+
+                <br><br>
+                <label for="gpu_manuf">Виробник відеокарт:</lable>
+                    <select id="gpu_manuf" name="gpu_manuf">
+                        <option>NVIDIA</option>
+                        <option>AMD</option>
+                        <option>Intel</option>
+                    </select>
+
+                    <br><br>
+                    <label for="gpu_model">Модель відеокарти:</label>
+                    <br>
+                    <input id="gpu_model" name="gpu_model" type="text">
+
+                    <br><br>
+                    <label for="ram_model">Модель ОЗП:</label>
+                    <br>
+                    <input id="ram_model" name="ram_model" type="text">
+
+                    <br><br>
+                    <fieldset>
+                        <legend>Оберіть кількість модулів ОЗП:</legend>
+                        <div>
+                            <label for="ram_modules_1">1</label>
+                            <input id="ram_modules_1" type="radio" name="ram_num" value="1">
+                        </div>
+                        <div>
+                            <label for="ram_modules_2">2</label>
+                            <input id="ram_modules_2" type="radio" name="ram_num" value="2" checked>
+                        </div>
+                    </fieldset>
+
+                    <br>
+                    <label for="ssd_model">Модель SSD:</label>
+                    <br>
+                    <input id="ssd_model" name="ssd_model" type="text">
+
+                    <br><br>
+                    <label for="ssd_volume">Об'єм SSD:</lable>
+                        <select id="ssd_volume" name="ssd_volume">
+                            <option>256Гб</option>
+                            <option>512Гб</option>
+                            <option>1Тб</option>
+                            <option>2Тб</option>
+                        </select>
+
+                        <br><br>
+                        <button type="submit">Підтвердити</button>
+        </form>
+
+        <br><br>
+        <h3>Використання карт зображень (map & area & rect)</h3>
+
+        <img src="KHNURE_building.jpg" width="500" height="370" alt="Картинка ХНУРЕ" usemap="#redirect">
+        <map name="redirect">
+            <area shape="rect" coords="0,0,167,370" href="https://nure.ua/" target="_blank" alt="Сайт Університету">
+            <area shape="rect" coords="167,0,334,370" href="https://nure.ua/department/kafedra-elektronnih-obchislyuvalnih-mashin-eom" target="_blank" alt="Сайт Кафедри ЕОМ">
+            <area shape="rect" coords="334,0,500,370" href="https://cist.nure.ua/ias/app/tt/f?p=778:2:62380232922834::NO" target="_blank" alt="Сайт Розкладу Занять">
+        </map>
+
+    </main>
 </body>
+
 </html>
