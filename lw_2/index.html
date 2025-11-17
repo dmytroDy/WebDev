@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        button {
+            position: fixed;
+            height: 30px;
+            background-color: indigo;
+            color: yellow;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 13px;
+            border: 3px solid black;
+            border-radius: 5px;
+            right: 3%;
+            bottom: 5%;
+            transition: 0.5s ease;
+        }
+
+        button:hover {
+            background-color: yellow;
+            color: indigo;
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body style="font-family:monospace; font-size:15px; background-color: antiquewhite;">
+
+    <header>
+        <h1>Лабораторна робота №2</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="desc-content">
+            <h2>Клієнт і сервер</h2>
+            <img id="float-img" src="images/client-server.jpg" width="350" alt="client-server-arch photo">
+            В основі клієнт-серверної архітектури лежать два компоненти: клієнт і сервер.<br><br>
+            <b>Клієнт</b> – комп'ютер на стороні користувача, який відправляє запит до сервера для надання
+            інформації або виконання певних дій.<br><br>
+            <b>Сервер</b> – більш потужний комп'ютер або обладнання, призначене для вирішення певних завдань
+            з виконання програмних кодів, виконання сервісних функцій за запитом клієнтів, надання
+            користувачам доступу до певних ресурсів, зберігання інформації і баз даних.
+            Модель такої системи полягає в тому, що клієнт відправляє запит на сервер, де він обробляється, і готовий
+            результат відправляється клієнтові. Сервер може обслуговувати кілька клієнтів одночасно. Якщо одночасно
+            приходить більше одного запиту, то вони встановлюються в чергу і виконуються сервером послідовно. Іноді
+            запити можуть мати пріоритети.
+            Запити з більш високими пріоритетами повинні виконуватися раніше.
+        </div>
+
+        <h2>Клієнт-серверні архітектури</h2>
+        <div class="tabs">
+
+            <input type="radio" name="tabs-button" id="button-1" checked>
+            <input type="radio" name="tabs-button" id="button-2">
+            <input type="radio" name="tabs-button" id="button-3">
+
+            <div class="nav-panel">
+                <label for="button-1" id="label-1">Дворівнева</label>
+                <label for="button-2" id="label-2">Трирівнена</label>
+                <label for="button-3" id="label-3">Багаторівнева</label>
+            </div>
+
+            <div class="tab" id="content-1">
+                <img src="images/two_level_arch.jpg" alt="2-level-architecture" width="350">
+                Дворівнева архітектура складається з двох вузлів:
+                <ul>
+                    <li>сервер, який відповідає за отримання запитів і відправку
+                        відповідей клієнту, використовуючи при цьому лише власні ресурси;
+                    </li>
+                    <li>клієнт, який представляє користувацький інтерфейс.
+                    </li>
+                </ul>
+                Принцип роботи полягає в тому, що сервер отримує запит, обробляє його і відповідає
+                безпосередньо, без використання сторонніх ресурсів.
+            </div>
+
+            <div class="tab" id="content-2">
+                <img src="images/three_level_arch.jpg" alt="2-level-architecture" width="350">
+                Трирівнева архітектура складається з наступних компонентів:
+                <ul>
+                    <li>
+                        представлення даних – призначений для користувача інтерфейс;
+                    </li>
+                    <li>
+                        прикладний компонент – сервер додатків;
+                    </li>
+                    <li>
+                        керування ресурсами – сервер бази даних, який надає інформацію.
+                    </li>
+                </ul>
+                Принцип роботи полягає в тому, що декілька серверів обробляють запит клієнта. Розподіл операцій знижує
+                навантаження на сервер.
+            </div>
+
+            <div class="tab" id="content-3">
+                <img src="images/multi_level_arch.jpg" alt="2-level-architecture" width="350">
+                Трирівневу архітектуру можна розширити до багаторівневої (N-tier, Multi-tier)
+                способом встановлення додаткових серверів. Багаторівнева архітектура дозволяє
+                підвищити ефективність роботи інформаційної системи, а також оптимізувати розподіл
+                її програмно-апаратних ресурсів.
+            </div>
+
+        </div>
+
+    </div>
+
+    <button onclick="location.href='index.html'" type="button">На початок!</button>
+
+</body>
+
+</html>

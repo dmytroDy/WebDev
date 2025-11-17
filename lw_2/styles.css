@@ -1,0 +1,74 @@
+
+
+header h1{
+    font-size: 30px;
+    color: darkgreen;
+    text-align: center;
+    margin: 20px;
+}
+
+.container h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container .desc-content {
+    width: 50%;
+    margin: auto;
+}
+
+.tabs {
+    overflow: auto;
+    width: 50%;
+    border: 2px solid brown;
+    width: 60%;
+    margin: auto;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs input:checked {
+    background-color: cornflowerblue;
+}
+
+.tabs > .tab {
+    display: none;
+    border-top: 2px solid brown;
+}
+
+.tabs > .tab > img {
+    float: left;
+    padding: 3px 15px 3px 5px;
+}
+
+
+.tabs > .nav-panel label {
+    font-size: 17px;
+    font-weight: bold;
+    font-family:cursive;
+    color: brown;
+}
+
+.tabs > #button-1:checked ~ .nav-panel #label-1,
+.tabs > #button-2:checked ~ .nav-panel #label-2,
+.tabs > #button-3:checked ~ .nav-panel #label-3 {
+    color: yellow;
+    background-color: blueviolet;
+}
+
+#button-1:checked ~ #content-1,
+#button-2:checked ~ #content-2,
+#button-3:checked ~ #content-3 {
+
+    display: block;
+}
+
+.desc-content #float-img {
+    float: left;
+    padding: 0px 10px 5px 0px;
+}
+
