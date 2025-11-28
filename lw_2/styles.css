@@ -21,7 +21,6 @@ header h1{
 
 .tabs {
     overflow: auto;
-    width: 50%;
     border: 2px solid brown;
     width: 60%;
     margin: auto;
@@ -31,9 +30,6 @@ header h1{
     display: none;
 }
 
-.tabs input:checked {
-    background-color: cornflowerblue;
-}
 
 .tabs > .tab {
     display: none;
