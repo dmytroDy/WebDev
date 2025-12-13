@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Caesar Cipher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>Шифр Цезаря</h1>
+
+    <label for="lang-mode">Мова</label>
+    <select id="lang-mode">
+        <option value="ua">Українська</option>
+        <option value="en">Англійська</option>
+    </select>
+
+    <label for="encryption-mode">Режим</label>
+    <select id="encryption-mode">
+        <option value="enc">Зашифрувати</option>
+        <option value="dec">Розшифрувати</option>
+    </select>
+
+    <label>Текст</label>
+    <textarea id="inputText" placeholder="Введіть текст..."></textarea>
+
+    <label>Ключ</label>
+    <input id="key" type="number" value="3">
+
+    <button id="go">Почати</button>
+
+    <label>Результат</label>
+    <textarea id="outputText" readonly></textarea>
+</div>
+
+<script src="cipher.js"></script>
+</body>
+</html>

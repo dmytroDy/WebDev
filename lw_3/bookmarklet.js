@@ -7,7 +7,7 @@
     }
     let rows = table.rows;
     const len = rows.length;
-    const colIdx = 3;
+    const colIdx = 3; // колонка з макс температурою
     let maxTemp = parseFloat(rows[1].cells[colIdx].textContent);
     let maxTempDate = rows[1].cells[colIdx-1].textContent;
 
