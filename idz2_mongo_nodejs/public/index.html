@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік комп'ютерів організації</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Система обліку комп'ютерів</h1>
+
+    <div class="pc-item">
+        <form id="cpu-info_form">
+            <div class="info-row">
+                <label class="label" for="cpu_sel">Список за процесором:</label>
+                <select id="cpu_sel" name="cpu">
+                </select>
+                <input type="submit" value="Пошук">
+            </div>
+        </form>
+    </div>
+
+    <div class="pc-item">
+        <form id="software-info_form">
+            <div class="info-row">
+                <label class="label" for="soft_sel">Список за встановленим ПЗ:</label>
+                <select id="soft_sel" name="software">
+                </select>
+                <input type="submit" value="Пошук">
+            </div>
+        </form>
+    </div>
+
+    <div class="pc-item">
+        <form id="expired-info_form">
+            <div class="info-row">
+                <label class="label" for="expired_but">Комп'ютери з вичерпаним терміном гарантії:</label>
+                <input id="expired_but" type="submit" value="Пошук">
+                <button type="button" id="btn_cache_expired">Показати з кешу</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="local_results"></div>
+
+</div>
+
+</body>
+</html>
